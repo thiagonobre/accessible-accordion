@@ -1,74 +1,32 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    display: block;
-    padding: 0;
-    margin: 0;
-    border: 0 none;
-}
-#accessibleAccordion * {
-    border: 0 none;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    list-style: outside none;
-}
-#accessibleAccordion strong, #accessibleAccordion b {
-    font-weight: bold;
-}
-#all {
-    min-width: 1000px;
-    min-height: 100%;
-    background: #f1f1f1;
-    padding: 0;
-    margin: 0;
-    border: 0 none;
-}
-#all > div {
-    padding: 20px 0;
-}
-#accessibleAccordion .left {
-    float: left;
-}
-#accessibleAccordion .right {
-    float: right;
-}
-#accessibleAccordion .clear {
-    clear: both;
-    height: 0;
-    overflow: hidden;
-}
-
-#accessibleAccordion .accessibleAccordion > li {
+.accessibleAccordion > li {
     cursor: pointer;
     margin: 15px;
     padding: 10px;
+    list-style: outside none;
 
 }
-
-#accessibleAccordion .accessibleAccordion > li.question {
+.accessibleAccordion > li.question {
     background-color: #000;
     border: 1px solid #000;
     color: #EFEFEF;
 }
 
-#accessibleAccordion .accessibleAccordion > li.focused,
-#accessibleAccordion .accessibleAccordion > li:focus {
-    border: 1px solid #f00;
+.accessibleAccordion > li.focused,
+.accessibleAccordion > li:focus {
+    /* border: 1px solid #f00; */
 }
 
-#accessibleAccordion .accessibleAccordion > li.answer {
-    margin-top: 0;
-    padding-top: 0;
+.accessibleAccordion > li.answer {
 }
 
-#accessibleAccordion .accessibleAccordion > li.question:hover, 
-#accessibleAccordion .accessibleAccordion > li.question:focus {
+.accessibleAccordion > li.question.focused,
+.accessibleAccordion > li.question:focus,
+.accessibleAccordion > li.question:hover, 
+.accessibleAccordion > li.question:focus {
     text-decoration: underline;
 }
 
-#accessibleAccordion .accessibleAccordion .accessibleLink {
+.accessibleAccordion .accessibleLink {
     font-size: 0;
     overflow: hidden;
     height: 0;
