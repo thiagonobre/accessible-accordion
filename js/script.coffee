@@ -17,13 +17,15 @@ do ($ = jQuery) ->
                         onclick: 'return false'
                         title: "#{_answerOrQuestion}#{_accessibleText}"
                         class: 'accessibleLink'
+                        tabindex: i+1
                     
                     _a.attr _attrs
                     _a.html '&nbsp;'
 
                     _li.on 'click', () ->
                         do _li.next('.answer').toggle
-                        _li.toggleClass 'on'
+                        _li.filter '.question'
+                            .toggleClass 'on'
 
                     _a.on 'focus', () ->
                         _li.addClass 'focused on'

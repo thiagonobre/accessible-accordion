@@ -1,11 +1,11 @@
 .accessibleAccordion > li {
-    cursor: pointer;
     margin: 15px;
     padding: 10px;
     list-style: outside none;
 
 }
 .accessibleAccordion > li.question {
+    cursor: pointer;
     background-color: #000;
     border: 1px solid #000;
     color: #EFEFEF;

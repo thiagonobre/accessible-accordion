@@ -15,13 +15,14 @@
           href: '#',
           onclick: 'return false',
           title: "" + _answerOrQuestion + _accessibleText,
-          "class": 'accessibleLink'
+          "class": 'accessibleLink',
+          tabindex: i + 1
         };
         _a.attr(_attrs);
         _a.html('&nbsp;');
         _li.on('click', function() {
           _li.next('.answer').toggle();
-          return _li.toggleClass('on');
+          return _li.filter('.question').toggleClass('on');
         });
         _a.on('focus', function() {
           _li.addClass('focused on');
