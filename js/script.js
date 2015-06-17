@@ -20,10 +20,11 @@
         _a.attr(_attrs);
         _a.html('&nbsp;');
         _li.on('click', function() {
-          return _li.next('.answer').toggle();
+          _li.next('.answer').toggle();
+          return _li.toggleClass('on');
         });
         _a.on('focus', function() {
-          _li.addClass('focused');
+          _li.addClass('focused on');
           return _li.next('.answer').show();
         });
         _a.on('blur', function() {

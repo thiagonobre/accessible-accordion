@@ -23,9 +23,10 @@ do ($ = jQuery) ->
 
                     _li.on 'click', () ->
                         do _li.next('.answer').toggle
+                        _li.toggleClass 'on'
 
                     _a.on 'focus', () ->
-                        _li.addClass 'focused'
+                        _li.addClass 'focused on'
                         do _li.next('.answer').show
 
                     _a.on 'blur', () ->
